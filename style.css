@@ -1,3 +1,7 @@
 /* Things are gonna get messy in here, maintain simple naming convention for all html files.*/
 
 /* Use class for things that will be the same across all pages and ID for things that will change from page to page.  */
+
+body {
+  background-color: #ffb703;
+}
