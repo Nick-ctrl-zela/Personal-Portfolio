@@ -2,6 +2,42 @@
 
 /* Use class for things that will be the same across all pages and ID for things that will change from page to page.  */
 
+a:link, a:visited {
+  background-color: #fefae0;
+  color: #30312a;
+  border: 2px solid #30312a;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #283618;
+  color: #fefae0;
+}
+
 body {
-  background-color: #ffb703;
+  background-color: #fefae0;
+}
+
+h1 {
+  color: #283618;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #283618;
 }
