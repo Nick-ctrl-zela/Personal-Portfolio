@@ -3,27 +3,72 @@
 /* Use class for things that will be the same across all pages and ID for things that will change from page to page.  */
 body {
   background-color: #fefae0;
+  text-align: right;
+  color: #283618
+}
+div {
+  padding: 0px 100px;
+  
+}
+div > img {
+  height: 250px;
+  float: left;
+  margin-left: 50px;
 }
 
-h1 {
-  color: #283618;
-}
-
-.topnav {
+#topnav {
   overflow: hidden;
   background-color: #30312a;
+  
 }
 
-.topnav a {
+#topnav a {
   float: right;
   display: block;
   color: #fefae0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
 }
 
-.topnav a:hover {
+#topnav a:hover {
   background-color: #606c38;
   color: #dda15e;
+}
+
+p {
+  font-size: 14px;
+}
+
+#page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  background-color: #30312a;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#linked > img {
+  height: 40px;
+}
+
+#quote {
+  margin: 175px 100px;
+  color: #bc6c25;
 }
