@@ -6,11 +6,15 @@ body {
   text-align: right;
   color: #283618
 }
-div {
-  padding: 0px 100px;
-  
+h1 {
+  font-size: xx-large;
 }
-div > img {
+
+#index {
+  padding: 0px 100px;
+}
+
+#index > img {
   height: 250px;
   float: left;
   margin-left: 50px;
@@ -71,4 +75,78 @@ footer {
 #quote {
   margin: 175px 100px;
   color: #bc6c25;
+}
+
+#thanos {
+  text-align: center;
+  margin: 0px 25px;
+}
+
+#boys {
+  text-align: left;
+  margin: 0px 25px;
+}
+
+#boys > img {
+  float: right;
+  height: 90px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#vg {
+  text-align: right;
+  margin: 0px 25px;
+}
+
+#vg > img {
+  float: left;
+  height: 75px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+#camp {
+  text-align: left;
+  margin: 0px 25px;
+}
+
+#camp > img {
+  float: right;
+  height: 90px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+#proj1 {
+  padding: 2px 20px 5px;
+  background-color: #dbb284;
+  color: #283618;
+  margin: 0px 100px;
+  text-align: left;
+}
+
+#proj2 {
+  padding: 2px 20px 5px;
+  background-color: #dbb284;
+  color: #283618;
+  margin: 10px 100px;
+  text-align: right;
+}
+
+#proj3 {
+  padding: 2px 20px 5px;
+  background-color: #dbb284;
+  color: #283618;
+  margin: 0px 100px;
+  text-align: left;
+}
+
+#frank {
+  text-align: center;
+  margin: 0px 25px;
+}
+
+#omo {
+  margin: 8px 25px;
 }
