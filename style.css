@@ -68,7 +68,7 @@ footer {
   width: 100%;
 }
 
-#linked > img {
+#linked img {
   height: 40px;
 }
 
@@ -87,7 +87,7 @@ footer {
   margin: 0px 25px;
 }
 
-#boys > img {
+#boys img {
   float: right;
   height: 90px;
   margin-top: 5px;
@@ -99,7 +99,7 @@ footer {
   margin: 0px 25px;
 }
 
-#vg > img {
+#vg img {
   float: left;
   height: 75px;
   margin-top: 10px;
@@ -111,7 +111,7 @@ footer {
   margin: 0px 25px;
 }
 
-#camp > img {
+#camp img {
   float: right;
   height: 90px;
   margin-top: 10px;
