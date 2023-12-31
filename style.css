@@ -1,29 +1,18 @@
 /* Things are gonna get messy in here, maintain simple naming convention for all html files.*/
 
 /* Use class for things that will be the same across all pages and ID for things that will change from page to page.  */
-body {
-  background-color: #fefae0;
-  text-align: right;
-  color: #283618
-}
-h1 {
-  font-size: xx-large;
+#page-container{
+  position: relative;
+  min-height: 100vh;
 }
 
-#index {
-  padding: 0px 100px;
-}
-
-#index > img {
-  height: 250px;
-  float: left;
-  margin-left: 50px;
+#content-wrap {
+  padding-bottom: 2.5rem;
 }
 
 #topnav {
   overflow: hidden;
   background-color: #30312a;
-  
 }
 
 #topnav a {
@@ -33,7 +22,6 @@ h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  
 }
 
 #topnav a:hover {
@@ -41,17 +29,10 @@ h1 {
   color: #dda15e;
 }
 
-p {
-  font-size: 14px;
-}
-
-#page-container{
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;
+body {
+  background-color: #fefae0;
+  text-align: right;
+  color: #283618
 }
 
 footer {
@@ -68,25 +49,80 @@ footer {
   width: 100%;
 }
 
-#linked img {
+#linkedin img {
   height: 40px;
 }
 
-#quote {
-  margin: 175px 100px;
+#index-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". . header header ."
+  "photo . header header ."
+  "photo quote quote quote ."
+  /* "quote quote quote quote quote" */
+}
+
+#index-img {
+  display: grid;
+  grid-area: photo;
+}
+
+#index-img img {
+  width: 75%;
+  justify-self: center;
+}
+
+#index-name {
+  display: grid;
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#index-name h1 {
+  font-size: 48px;
+}
+
+#index-text {
+  display: grid;
+  grid-area: header;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#index-text p {
+  font-size: 22px;
+}
+
+#index-text h1 {
+  font-size: 28px;
+}
+
+#index-quote {
+  display: grid;
+  grid-area: quote;
+  justify-self: stretch;
   color: #bc6c25;
 }
 
-#about-container {
+#index-quote h2 {
+  font-size: 36px;
+  text-align: right;
+}
+
+#aboutportfo-container {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: auto;
   grid-template-areas: 
    ". header header header ."
-   "photo1 kids kids kids sidebar1"
-   "sidebar2 vg vg vg photo2"
-   "photo3 camp camp camp sidebar3"
+   "photo1 top top top sidebar1"
+   "sidebar2 mid mid mid photo2"
+   "photo3 bot bot bot sidebar3"
    "footer footer footer footer footer";
+   row-gap: 10px;
 }
 
 #thanos {
@@ -97,7 +133,7 @@ footer {
 
 #boys {
   display: grid;
-  grid-area: kids;
+  grid-area: top;
   justify-content: left;
   text-align: left;
   font-size: 22px;
@@ -119,7 +155,7 @@ font-size: 18px;
 
 #videogames {
   display: grid;
-  grid-area: vg;
+  grid-area: mid;
   font-size: 22px;
 }
 
@@ -139,7 +175,7 @@ font-size: 18px;
 
 #camping {
   display: grid;
-  grid-area: camp;
+  grid-area: bot;
   text-align: left;
   font-size: 22px;
 }
@@ -158,37 +194,46 @@ font-size: 18px;
   justify-self: center;
 }
 
+#frank {
+display: grid;
+grid-area: header;
+justify-self: center;
+}
+
 #proj1 {
-  padding: 2px 20px 5px;
-  background-color: #dbb284;
-  color: #283618;
-  margin: 0px 100px;
+  display: grid;
+  grid-area: top;
+  justify-content: left;
   text-align: left;
+  font-size: 22px;
+  background-color: #f8d4ab;
+}
+
+#proj1 p {
+  font-size: 18px;
 }
 
 #proj2 {
-  padding: 2px 20px 5px;
-  background-color: #dbb284;
-  color: #283618;
-  margin: 10px 100px;
-  text-align: right;
+  display: grid;
+  grid-area: mid;
+  font-size: 22px;
+  background-color: #f8d4ab;
+}
+
+#proj2 p {
+  font-size: 18px;
 }
 
 #proj3 {
-  padding: 2px 20px 5px;
-  background-color: #dbb284;
-  color: #283618;
-  margin: 0px 100px;
+  display: grid;
+  grid-area: bot;
   text-align: left;
+  font-size: 22px;
+  background-color: #f8d4ab;
 }
 
-#frank {
-  text-align: center;
-  margin: 0px 25px;
-}
-
-#omo {
-  margin: 8px 25px;
+#proj3 p {
+  font-size: 18px;
 }
 
 #contact-container {
