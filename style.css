@@ -2,6 +2,7 @@
 /* Naming convention is something I am still working on. */
 
 
+
 #page-container{
   position: relative;
   min-height: 100vh;
@@ -74,6 +75,7 @@ footer {
   display: grid;
   grid-area: header;
   text-align: center;
+  font-size: 32px;
 }
 
 #boys {
@@ -94,8 +96,10 @@ font-size: 18px;
 }
 
 #boys-img img {
-  width: 50%;
+  width: 60%;
+  min-width: 75px;
   justify-self: center;
+  align-self: center;
 }
 
 #videogames {
@@ -115,7 +119,9 @@ font-size: 18px;
 
 #videogames-img img {
   width: 53%;
+  min-width: 75px;
   justify-self: center;
+  align-self: center;
 }
 
 #camping {
@@ -134,15 +140,19 @@ font-size: 18px;
   grid-area: photo3;
 }
 
-#camping-img > img {
+#camping-img img {
   width: 60%;
+  min-width: 75px;
   justify-self: center;
+  align-self: center;
 }
 
 #frank {
 display: grid;
 grid-area: header;
 justify-self: center;
+text-align: center;
+font-size: 32px;
 }
 
 #proj1 {
@@ -154,8 +164,15 @@ justify-self: center;
   background-color: #f8d4ab;
 }
 
+#proj1 h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #proj1 p {
   font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #proj2 {
@@ -165,8 +182,15 @@ justify-self: center;
   background-color: #f8d4ab;
 }
 
+#proj2 h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #proj2 p {
   font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #proj3 {
@@ -177,8 +201,15 @@ justify-self: center;
   background-color: #f8d4ab;
 }
 
+#proj3 h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #proj3 p {
   font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Everything above this to the previous note uses the same grid which is the first piece of code listed. I wanted to keep them together and separate of the rest for ease of locating */
@@ -293,8 +324,11 @@ justify-self: center;
   font-size: 48px;
 }
 
+/* Everything above this line to the previous note is for the contact page */
+
 #thankyou {
   text-align: center;
+  font-size: 32px;
 }
 
-/* Everything above this line to the previous note is for the contact page */
+/* Everything above this line to the previous note is for the success page */
