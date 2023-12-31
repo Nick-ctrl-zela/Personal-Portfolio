@@ -1,6 +1,7 @@
-/* Things are gonna get messy in here, maintain simple naming convention for all html files.*/
+/* Setting up file so styling that is consistent across multiple pages is higher on the file */
+/* Naming convention is something I am still working on. */
 
-/* Use class for things that will be the same across all pages and ID for things that will change from page to page.  */
+
 #page-container{
   position: relative;
   min-height: 100vh;
@@ -22,6 +23,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 #topnav a:hover {
@@ -53,64 +55,7 @@ footer {
   height: 40px;
 }
 
-#index-container {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  ". . header header ."
-  "photo . header header ."
-  "photo quote quote quote ."
-  /* "quote quote quote quote quote" */
-}
-
-#index-img {
-  display: grid;
-  grid-area: photo;
-}
-
-#index-img img {
-  width: 75%;
-  justify-self: center;
-}
-
-#index-name {
-  display: grid;
-  grid-area: header;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-#index-name h1 {
-  font-size: 48px;
-}
-
-#index-text {
-  display: grid;
-  grid-area: header;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-#index-text p {
-  font-size: 22px;
-}
-
-#index-text h1 {
-  font-size: 28px;
-}
-
-#index-quote {
-  display: grid;
-  grid-area: quote;
-  justify-self: stretch;
-  color: #bc6c25;
-}
-
-#index-quote h2 {
-  font-size: 36px;
-  text-align: right;
-}
+/* Everything above this line is on all, or almost all, pages */
 
 #aboutportfo-container {
   display: grid;
@@ -236,6 +181,68 @@ justify-self: center;
   font-size: 18px;
 }
 
+/* Everything above this to the previous note uses the same grid which is the first piece of code listed. I wanted to keep them together and separate of the rest for ease of locating */
+
+#index-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". . header header ."
+  "photo . header header ."
+  "photo quote quote quote ."
+}
+
+#index-img {
+  display: grid;
+  grid-area: photo;
+}
+
+#index-img img {
+  width: 75%;
+  justify-self: center;
+}
+
+#index-name {
+  display: grid;
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#index-name h1 {
+  font-size: 48px;
+}
+
+#index-text {
+  display: grid;
+  grid-area: header;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#index-text p {
+  font-size: 22px;
+}
+
+#index-text h1 {
+  font-size: 28px;
+}
+
+#index-quote {
+  display: grid;
+  grid-area: quote;
+  justify-self: stretch;
+  color: #bc6c25;
+}
+
+#index-quote h2 {
+  font-size: 36px;
+  text-align: right;
+}
+
+/* Everything above this line to the previous note is for the index page */
+
 #contact-container {
   display: grid;
   grid-template-rows: repeat(55, 20px);
@@ -290,3 +297,4 @@ justify-self: center;
   text-align: center;
 }
 
+/* Everything above this line to the previous note is for the contact page */
