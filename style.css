@@ -77,45 +77,85 @@ footer {
   color: #bc6c25;
 }
 
+#about-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+   ". header header header ."
+   "photo1 kids kids kids sidebar1"
+   "sidebar2 vg vg vg photo2"
+   "photo3 camp camp camp sidebar3"
+   "footer footer footer footer footer";
+}
+
 #thanos {
+  display: grid;
+  grid-area: header;
   text-align: center;
-  margin: 0px 25px;
 }
 
 #boys {
+  display: grid;
+  grid-area: kids;
+  justify-content: left;
   text-align: left;
-  margin: 0px 25px;
+  font-size: 22px;
 }
 
-#boys img {
-  float: right;
-  height: 90px;
-  margin-top: 5px;
-  margin-right: 5px;
+#boys p {
+font-size: 18px;
 }
 
-#vg {
-  text-align: right;
-  margin: 0px 25px;
+#boys-img {
+  display: grid;
+  grid-area: photo1;  
 }
 
-#vg img {
-  float: left;
-  height: 75px;
-  margin-top: 10px;
-  margin-right: 5px;
+#boys-img img {
+  width: 50%;
+  justify-self: center;
 }
 
-#camp {
+#videogames {
+  display: grid;
+  grid-area: vg;
+  font-size: 22px;
+}
+
+#videogames p{
+  font-size: 18px;
+}
+
+#videogames-img { 
+  display: grid;
+  grid-area: photo2;
+}
+
+#videogames-img img {
+  width: 53%;
+  justify-self: center;
+}
+
+#camping {
+  display: grid;
+  grid-area: camp;
   text-align: left;
-  margin: 0px 25px;
+  font-size: 22px;
 }
 
-#camp img {
-  float: right;
-  height: 90px;
-  margin-top: 10px;
-  margin-right: 5px;
+#camping p {
+  font-size: 18px;
+}
+
+#camping-img {
+  display: grid;
+  grid-area: photo3;
+}
+
+#camping-img > img {
+  width: 60%;
+  justify-self: center;
 }
 
 #proj1 {
@@ -151,50 +191,57 @@ footer {
   margin: 8px 25px;
 }
 
-#contact1 {
+#contact-container {
   display: grid;
-  grid-template-rows: repeat(25, 20px);
+  grid-template-rows: repeat(55, 20px);
   grid-template-columns: repeat(25, 20px);
   justify-content: center;
   text-align: left;
-  
 }
 
 #name1 {
   display: grid;
-  grid-row-start: 0;
-  grid-row-end: 1;
-  grid-column-start: 16;
-  justify-self: end;
+  grid-row-start: 18;
+  grid-row-end: 19;
+  grid-column-start: 9;
+  justify-self: left;
 }
 
 #email1 {
   display: grid;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 16;
-  justify-self: end;
+  grid-row-start: 20;
+  grid-row-end: 21;
+  grid-column-start: 9;
+  justify-self: left;
 }
 
 #message1 {
   display: grid;
-  grid-row-start: 3;
-  grid-column-start: 14;
-  justify-self: center;
+  grid-row-start: 22;
+  grid-column-start: 9;
+  justify-self: left;
 }
 
 #submit {
   display: grid;
-  grid-row-start: 13;
-  grid-row-end: 14;
+  grid-row-start: 32;
+  grid-row-end: 33;
   grid-column-start: 14;
   justify-self: center;
 }
 
-#conme {
-  text-align: center;
+#contactme {
+  display: grid;
+  grid-row-start: 10;
+  grid-column-start: 8;
+  grid-column-end: 25;
+}
+
+#contactme h1 {
+  font-size: 48px;
 }
 
 #thankyou {
   text-align: center;
 }
+
