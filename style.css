@@ -1,8 +1,6 @@
 /* Setting up file so styling that is consistent across multiple pages is higher on the file */
 /* Naming convention is something I am still working on. */
 
-
-
 #page-container{
   position: relative;
   min-height: 100vh;
